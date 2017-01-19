@@ -28,7 +28,7 @@ Pod::Spec.new do |s|
       swift基础视图、视图工具类、系统控件扩展等等
                    DESC
 
-  s.homepage     = "https://github.com/LeoFangQ/CMSwiftUIKit"
+  s.homepage     = "https://github.com/CodeJoyTeam/CMSwiftUIKit"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -80,7 +80,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/LeoFangQ/CMSwiftUIKit.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/CodeJoyTeam/CMSwiftUIKit.git", :tag => "#{s.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
