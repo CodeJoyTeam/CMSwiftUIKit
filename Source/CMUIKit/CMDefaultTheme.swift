@@ -9,6 +9,7 @@
 import Foundation
 
 class CMDefaultTheme {
+    
     static let theme = CMDefaultTheme() // Singleton
     
     /// 主题颜色
