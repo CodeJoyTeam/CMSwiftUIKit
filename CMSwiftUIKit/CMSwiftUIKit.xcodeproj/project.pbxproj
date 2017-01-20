@@ -27,6 +27,11 @@
 		324E5B451E2DBAE600B95343 /* UITextView+Select.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324E5B331E2DBAE600B95343 /* UITextView+Select.swift */; };
 		324E5B461E2DBAE600B95343 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324E5B341E2DBAE600B95343 /* UIView+Extension.swift */; };
 		324E5B481E2DBC2E00B95343 /* CMDefaultTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324E5B471E2DBC2E00B95343 /* CMDefaultTheme.swift */; };
+		324E5B4D1E31A5AF00B95343 /* RefreshFooterAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324E5B4B1E31A5AF00B95343 /* RefreshFooterAnimator.swift */; };
+		324E5B4E1E31A5AF00B95343 /* RefreshHeaderAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324E5B4C1E31A5AF00B95343 /* RefreshHeaderAnimator.swift */; };
+		324E5B511E31A9D400B95343 /* BaseNavgationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324E5B4F1E31A9D400B95343 /* BaseNavgationViewController.swift */; };
+		324E5B521E31A9D400B95343 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324E5B501E31A9D400B95343 /* BaseViewController.swift */; };
+		324E5B541E31B56D00B95343 /* BindingExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324E5B531E31B56D00B95343 /* BindingExtensions.swift */; };
 		44922EFE4CDBBE60229A19B3 /* Pods_CMSwiftUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCF356EDA12C99553E8D1F07 /* Pods_CMSwiftUIKit.framework */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +59,11 @@
 		324E5B331E2DBAE600B95343 /* UITextView+Select.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextView+Select.swift"; sourceTree = "<group>"; };
 		324E5B341E2DBAE600B95343 /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		324E5B471E2DBC2E00B95343 /* CMDefaultTheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CMDefaultTheme.swift; sourceTree = "<group>"; };
+		324E5B4B1E31A5AF00B95343 /* RefreshFooterAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RefreshFooterAnimator.swift; sourceTree = "<group>"; };
+		324E5B4C1E31A5AF00B95343 /* RefreshHeaderAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RefreshHeaderAnimator.swift; sourceTree = "<group>"; };
+		324E5B4F1E31A9D400B95343 /* BaseNavgationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNavgationViewController.swift; sourceTree = "<group>"; };
+		324E5B501E31A9D400B95343 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		324E5B531E31B56D00B95343 /* BindingExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BindingExtensions.swift; sourceTree = "<group>"; };
 		E3B3A7E088B57CDFE7B42848 /* Pods-CMSwiftUIKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CMSwiftUIKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-CMSwiftUIKit/Pods-CMSwiftUIKit.release.xcconfig"; sourceTree = "<group>"; };
 		FCF356EDA12C99553E8D1F07 /* Pods_CMSwiftUIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CMSwiftUIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -109,6 +119,8 @@
 		324E5B1D1E2DBAE600B95343 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				324E5B491E31A2F000B95343 /* BaseView */,
+				324E5B4A1E31A2F000B95343 /* Widgets */,
 				324E5B1E1E2DBAE600B95343 /* CMCycleScrollView */,
 				324E5B261E2DBAE600B95343 /* CMCyclingLabel */,
 				324E5B281E2DBAE600B95343 /* CMUIKit */,
@@ -163,6 +175,7 @@
 		324E5B2E1E2DBAE600B95343 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				324E5B531E31B56D00B95343 /* BindingExtensions.swift */,
 				324E5B2F1E2DBAE600B95343 /* UIColor+Initialize.swift */,
 				324E5B301E2DBAE600B95343 /* UIImage+Effects.swift */,
 				324E5B311E2DBAE600B95343 /* UIImage+Splash.swift */,
@@ -171,6 +184,24 @@
 				324E5B341E2DBAE600B95343 /* UIView+Extension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		324E5B491E31A2F000B95343 /* BaseView */ = {
+			isa = PBXGroup;
+			children = (
+				324E5B4F1E31A9D400B95343 /* BaseNavgationViewController.swift */,
+				324E5B501E31A9D400B95343 /* BaseViewController.swift */,
+			);
+			path = BaseView;
+			sourceTree = "<group>";
+		};
+		324E5B4A1E31A2F000B95343 /* Widgets */ = {
+			isa = PBXGroup;
+			children = (
+				324E5B4B1E31A5AF00B95343 /* RefreshFooterAnimator.swift */,
+				324E5B4C1E31A5AF00B95343 /* RefreshHeaderAnimator.swift */,
+			);
+			path = Widgets;
 			sourceTree = "<group>";
 		};
 		E4B48DB851763A9CF9FADEEF /* Pods */ = {
@@ -300,18 +331,23 @@
 				324E5B411E2DBAE600B95343 /* UIColor+Initialize.swift in Sources */,
 				324E5B3A1E2DBAE600B95343 /* CMPageControl.swift in Sources */,
 				324E5B431E2DBAE600B95343 /* UIImage+Splash.swift in Sources */,
+				324E5B521E31A9D400B95343 /* BaseViewController.swift in Sources */,
 				324E5B361E2DBAE600B95343 /* CMCycleScrollView.swift in Sources */,
 				324E5B391E2DBAE600B95343 /* CMDotView.swift in Sources */,
 				324E5B3C1E2DBAE600B95343 /* CMAutoHideLabel.swift in Sources */,
 				324E5B3D1E2DBAE600B95343 /* CMEvaluationToolView.swift in Sources */,
+				324E5B511E31A9D400B95343 /* BaseNavgationViewController.swift in Sources */,
+				324E5B4D1E31A5AF00B95343 /* RefreshFooterAnimator.swift in Sources */,
 				324E5B371E2DBAE600B95343 /* CMAbstractDotView.swift in Sources */,
 				324E5B481E2DBC2E00B95343 /* CMDefaultTheme.swift in Sources */,
 				324E5B441E2DBAE600B95343 /* UILabel+Extension.swift in Sources */,
+				324E5B541E31B56D00B95343 /* BindingExtensions.swift in Sources */,
 				324E5B401E2DBAE600B95343 /* CMUIKit.swift in Sources */,
 				324E5B3B1E2DBAE600B95343 /* CMCyclingLabel.swift in Sources */,
 				324E5B3F1E2DBAE600B95343 /* CMTopMenuBar.swift in Sources */,
 				324E5B461E2DBAE600B95343 /* UIView+Extension.swift in Sources */,
 				324E5B421E2DBAE600B95343 /* UIImage+Effects.swift in Sources */,
+				324E5B4E1E31A5AF00B95343 /* RefreshHeaderAnimator.swift in Sources */,
 				324E5B351E2DBAE600B95343 /* CMCollectionViewCell.swift in Sources */,
 				324E5B381E2DBAE600B95343 /* CMAnimatedDotView.swift in Sources */,
 				324E5B3E1E2DBAE600B95343 /* CMSubtitleButton.swift in Sources */,
