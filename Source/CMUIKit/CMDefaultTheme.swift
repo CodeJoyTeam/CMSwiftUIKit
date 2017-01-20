@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import EZSwiftExtensions
 
 class CMDefaultTheme {
     
@@ -52,6 +53,27 @@ class CMDefaultTheme {
     var defaultBoundaryColor:UIColor{
         set { _defaultBoundaryColor = newValue }
         get { return _defaultBoundaryColor }
+    }
+    
+    /// 导航栏背景图
+    private var _normalNavBarBgImage = UIImage.init(color: .white, size: CGSize.init(width:4,height:267))
+    var normalNavBarBgImage:UIImage?{
+        set { _normalNavBarBgImage = newValue }
+        get { return _normalNavBarBgImage }
+    }
+    
+    /// 导航栏背景图
+    private var _lightNavBarBgImage = UIImage.init(color: .white, size: CGSize.init(width:4,height:267))
+    var lightNavBarBgImage:UIImage?{
+        set { _lightNavBarBgImage = newValue }
+        get { return _lightNavBarBgImage }
+    }
+
+    /// 占位图
+    private var _placeholderImage = UIImage.init(color: .lightGray, size: CGSize.init(width:70,height:70))
+    var placeholderImage:UIImage?{
+        set { _placeholderImage = newValue }
+        get { return _placeholderImage }
     }
 
 
